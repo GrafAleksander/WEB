@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Personal Site ALeksander</title>
+    <meta charset="utf-8">
+    <title>Personal Site ALeksander</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
+
 <body>
-	<table border="1" align="center">
-		<tr>
-			<td>
-				<p>Photo</p>
-			</td>
-			<td>
-				<p>Name: Aleksander</p>
-				<p>Surname: Tarnovskyi</p>
-				<p>Place of studying: NAU</p>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<center><h2>About me/Contacts</h2></center>
-				<center>
-					<a href="my_school.html">My school</a>
-					<a href="">My achievments</a>
-				</center>
-				<center><h2>Contact me</h2></center>
-				<form action="mailto:6979024@stud.nau.edu.ua" method="post" enctype="text/plain">
-					<p>Your name: <input type="text"></p>
-					<p>Your email: <input type="email"><p>
-					<p>Your message:</p>
-					<textarea cols="35" rows="10"></textarea>
-					<br>
-					<button>
-						<p>Send</p>
-					</button>
-				</form>
-			</td>
-		</tr>
-		<tr> 
-			<td colspan="2">
-				<h2><center>Skills</center></h2>
-				<table border="1">
-					<tr>
-						<td>HTML⭐⭐⭐⭐⭐</td>
-						<td>CSS⭐⭐⭐⭐⭐</td>
-						<td>JavaScript⭐⭐⭐⭐⭐</td>
-					</tr>
-					<tr>
-						<td>PHP⭐⭐⭐⭐</td>
-						<td>SQL⭐⭐⭐⭐</td>
-						<td>Solidity⭐⭐⭐</td>
-					</tr>
-					<tr>
-						<td>Scram⭐⭐⭐⭐</td>
-						<td>Organizing⭐⭐⭐⭐⭐</td>
-						<td>Teamwork⭐⭐⭐⭐⭐</td>
-					</tr>
-					<tr>
-						<td>English⭐⭐⭐⭐⭐</td>
-						<td>Russian⭐⭐⭐⭐⭐</td>
-						<td>Ukrainian⭐⭐⭐⭐</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<h2>Joke of the day</h2>
-				<p>C++ developer, tell, 1+1 in JS equals to?</p>
-				<p>It will be 2</p>
-				<p>No, it will be 11, 11-1 equals to?</p>
-				<p>It will be 1</p>
-				<p>No, it will be 10</p>
-				<p>Get out from my house, Front-end developer</p>
-			</td>
-			<td>
-				<h2>Facts about my pets</h2>
-				<p>I have 2 cats</p>
-				<p>I have 1 lizard</p>
-				<p>I have 1 dog</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-			</td>
-		</tr>
-	</table>
+<div class ="flex">
+    <div>
+        <p>Photo</p>
+        <p>Name: Aleksander</p>
+        <p>Surname: Tarnovskyi</p>
+        <p>Place of studying: NAU</p>
+    </div>
+    <div id="about"> 
+        <hr>
+        <a href="my_school.html">My school</a>
+        <a href="">My achievments</a>
+
+        <h2>Contact me</h2>
+   </div>
+
+    <form action="mailto:6979024@stud.nau.edu.ua" method="post" enctype="text/plain">
+        <p>Your name: <input type="text"></p>
+        <p>Your email: <input type="email"></p>
+        <p>Your message:</p>
+        <textarea cols="35" rows="10"></textarea>
+        <br>
+        <button style="color: green;">
+            <p>Send</p>
+        </button>
+    </form>
+</div>
+<div class="flex">
+    <div>
+    <h2>
+        Skills
+    </h2>
+
+    <table border="1">
+        <tr class="Skills">
+            <td>HTML⭐️⭐️⭐️⭐️⭐️</td>
+            <td>CSS⭐️⭐️⭐️⭐️⭐️</td>
+            <td>JavaScript⭐️⭐️⭐️⭐️⭐️</td>
+        </tr>
+        <tr class="Skills">
+            <td>PHP⭐️⭐️⭐️⭐️</td>
+            <td>SQL⭐️⭐️⭐️⭐️</td>
+            <td>Solidity⭐️⭐️⭐️</td>
+        </tr>
+        <tr class="Skills">
+            <td>Scram⭐️⭐️⭐️⭐️</td>
+            <td>Organizing⭐️⭐️⭐️⭐️⭐️</td>
+            <td>Teamwork⭐️⭐️⭐️⭐️⭐️</td>
+        </tr>
+        <tr class="Skills">
+            <td>English⭐️⭐️⭐️⭐️⭐️</td>
+            <td>Russian⭐️⭐️⭐️⭐️⭐️</td>
+            <td>Ukrainian⭐️⭐️⭐️⭐️</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2>Joke of the day</h2>
+    <p id="Text">C++ developer, tell, 1+1 in JS equals to?</p>
+    <p>It will be 2</p>
+    <p>No, it will be 11, 11-1 equals to?</p>
+    <p>It will be 1</p>
+    <p>No, it will be 10</p>
+    <p>Get out from my house, Front-end developer</p>
+
+    <h2>Facts about my pets</h2>
+    <p>I have 2 cats</p>
+    <p>I have 1 lizard</p>
+    <p>I have 1 dog</p>
+</div>
+
 </body>
-</html>
+
+</html> 

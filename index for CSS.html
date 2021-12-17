@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Laboratorna 4</title>
+
+	<style type="text/css"> /*internal CSS*/
+	/*для тексту з буквами*/
+		p { 
+			margin: 10px 0 0 10px;
+			font-size: 40px; /*Визначення розміру шрифта*/
+		}
+	/*class для всіх боксів*/
+		.flex-block { 
+			background-color: #EAEFF2; /*колір фону*/
+			border-left: 10px dotted #D0D0FF; /*товщина, стиль та колір лівої грані*/
+
+			width: 100px; /*визначення ширини та висоти*/
+			height: 150px;
+
+			position: fixed; /*визначаємо що використовуєм фіксоване позиціювання, тобто чи при гортанні сторінки чи під час зміни маштабу - елементи залишатимуться на своєму місці*/
+
+		}
+		.flex-block:hover { /*використання псевдокласу для виконання стилів тільки коли над об'єктом знаходиться курсор*/
+			background-color: yellow;
+			color: goldenrod;
+			cursor: pointer; /*зміна курсору на рукообразну*/
+		}
+	/*id кожного бокса, для присвоєння його позиції, необхідно при фіксованій позиції*/
+		#a { 
+			left: 10px;
+		}
+		#b {
+			left: 130px;
+		}
+		#c {
+			left: 250px;
+		}
+		#d {
+			left: 370px;
+		}
+		#e {
+			left: 490px;
+		}
+	/*даний елемент назавжди прибитий до нижнього правого кута*/
+		#f { 
+			bottom: 0;
+			right: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="flex-block" id="a">
+	<p class="h">A</p>
+</div>
+
+<div class="flex-block" id="b">
+	<p>B</p>
+</div>
+
+<div class="flex-block" id="c">
+	<p>C</p>
+</div>
+
+<div class="flex-block" id="d">
+	<p class="h">D</p>
+</div>
+
+<div class="flex-block" id="e">
+	<p class="h">E</p>
+</div>
+
+<div class="flex-block" id="f">
+	<p>F</p>
+</div>
+</body>
+
+</html>
